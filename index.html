@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex,follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- CSS --><link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library --><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript --><script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Jia-Yi Jhu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Wellfleet" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <script>
+        $(document).ready(function () { 
+            $('a[href*=#]').each(function () {  
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')   &&
+                    location.hostname == this.hostname   && this.hash.replace(/#/, '')) {   
+                    var $targetId = $(this.hash),
+                        $targetAnchor = $('[name=' + this.hash.slice(1) + ']');   
+                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor :
+                        false;    
+                    if ($target) {     
+                        var targetOffset = $target.offset().top;
+       
+                        $(this).click(function () {
+                            $("#nav li a").removeClass("active");
+                            $(this).addClass('active');      
+                            $('html, body').animate({
+                                scrollTop: targetOffset
+                            }, 1000);      
+                            return false;     
+                        });   
+                    }  
+                } 
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+ 
+    <header id="header">
+        <div class="content">
+            <div id="logo">
+                <a href=""> JY</a>
+            </div>
+            <ul class="drop-down-menu">
+                <li><a href="#slide2">#About</a>
+                    <ul>
+                        <li><a href="./me./me.html">Me</a>
+                        </li>                                               
+                    </ul>
+                </li>
+                </li>
+                <li><a href="#slide3">#Works</a>
+                    <ul>
+                        <li><a href="./loading./loading.html">Music</a>
+                        </li>
+                        <li><a href="./loading2./loading.html">Phptpgraphy</a>
+                        </li>
+                        <li><a href="./projects./project.html">Projects</a>
+                        </li> 
+                    </ul>   
+                </li>
+                <li><a href="#slide4">#Contact Us</a>
+                    <ul>
+                        <li><a href="./contact./contact.html">Contact</a>
+                        </li>                                              
+                    </ul>    
+                </li>                
+            </ul>
+           
+        </div>
+    </header>
+
+
+    <div id="slide1"> 
+       
+        <div id="content">
+            <div id="jiayi">Jia- yi Jhu </div>
+            <div id="intro">A trip has begun since 1997</br></br>&nbsp;“不管前方的路往哪走</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總保有一個飛行的夢”</div>            
+        </div>        
+    </div>
+    <div id="slide2">
+        <div class="content">
+            <div class="quotes_container">
+                <h3 id="me">“Everything happens for the best!”</h3>
+                <h4 id="author_name_gray">--  about Jia-Yi  --</h4>
+            </div>
+        </div>
+    </div>
+    <div id="slide3">
+        <div class="content">
+            <div class="quotes_container">
+                <h3 class="quotes">“Take a look at what I'm fond of!”</h3>
+            </div>
+        </div>
+    </div>
+   
+    <div id="slide4">
+        <!--<div class="content">-->
+            <!--<div class="quotes_container">-->
+                <div id="contact">“Thank you for surfing my website.&nbsp;&nbsp;Hope you like it!” </h3>                            
+            <!--</div>-->
+            <div id="copyright">
+                <a href="./contact./contact.html" >-->Contact us!!</a>
+            </div>
+       <!-- </div>-->
+    </div>
+
+</body>
+
+</html>
